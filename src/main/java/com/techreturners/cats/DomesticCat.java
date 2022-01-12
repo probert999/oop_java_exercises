@@ -1,6 +1,10 @@
 package com.techreturners.cats;
 
+import java.util.Random;
+
 public class DomesticCat extends CatStats {
+
+  private String eatingComment = "It will do I suppose.";
 
   public DomesticCat() {
     this.averageHeight = 23;
@@ -10,7 +14,8 @@ public class DomesticCat extends CatStats {
 
   @Override
   public String eat() {
-    return super.eat();
+    boolean randomComment = new Random().nextBoolean();
 
+    return (randomComment ? eatSound + ". " + eatingComment : eatSound);
   }
 }

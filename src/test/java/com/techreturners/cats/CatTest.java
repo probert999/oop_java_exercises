@@ -2,6 +2,7 @@ package com.techreturners.cats;
 
 import org.junit.Test;
 
+import static org.hamcrest.CoreMatchers.anyOf;
 import static org.junit.Assert.*;
 
 public class CatTest {
@@ -61,6 +62,8 @@ public class CatTest {
     @Test
     public void feedTheCat() {
         Cat domesticCat = new DomesticCat();
-        assertEquals("Purrrrrrr", domesticCat.eat());
+        String catEats = domesticCat.eat();
+
+        assertTrue(catEats.equals("Purrrrrrr") || catEats.equals("Purrrrrrr. It will do I suppose."));
     }
 }
