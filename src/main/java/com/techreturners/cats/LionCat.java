@@ -1,6 +1,6 @@
 package com.techreturners.cats;
 
-public class LionCat extends CatStats {
+public class LionCat extends Cat {
 
   public LionCat() {
     this.averageHeight = 1100;

@@ -1,16 +1,32 @@
 package com.techreturners.cats;
 
-interface Cat {
+public abstract class Cat implements Animal {
+  protected boolean sleeping = false;
+  protected int averageHeight = 300;
+  protected String setting = "domestic";
+  protected String eatSound = "yum";
 
-  String eat();
+  public void goToSleep() {
+    sleeping = true;
+  }
 
-  void goToSleep();
+  public boolean isAsleep() {
+    return sleeping;
+  }
 
-  boolean isAsleep();
+  public void wakeUp() {
+    sleeping = false;
+  }
 
-  void wakeUp();
+  public String getSetting() {
+    return setting;
+  }
 
-  String getSetting();
+  public int getAverageHeight() {
+    return averageHeight;
+  }
 
-  int getAverageHeight();
+  public String eat() {
+    return eatSound;
+  }
 }

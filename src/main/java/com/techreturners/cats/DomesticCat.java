@@ -2,7 +2,7 @@ package com.techreturners.cats;
 
 import java.util.Random;
 
-public class DomesticCat extends CatStats {
+public class DomesticCat extends Cat {
 
   private String eatingComment = "It will do I suppose.";
 

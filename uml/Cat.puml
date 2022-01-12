@@ -1,0 +1,28 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+interface Animal
+{
+  + eat() : void
+  + goToSleep() : void
+  + isAsleep() : boolean
+  + wakeUp() : void
+  + getSetting() : String
+  + getAverageHeight() : int
+}
+
+abstract class Cat  implements Animal {
+  - boolean sleeping
+  - int averageHeight
+  - String setting
+  - String eatSound
+}
+
+class DomesticCat extends Cat {
+}
+
+class LionCat extends Cat {}
+
+class CheetahCat extends Cat {}
+
+@enduml

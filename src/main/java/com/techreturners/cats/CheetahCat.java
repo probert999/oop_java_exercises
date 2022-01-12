@@ -1,6 +1,6 @@
 package com.techreturners.cats;
 
-public class CheetahCat extends CatStats {
+public class CheetahCat extends Cat {
 
   public CheetahCat() {
     this.averageHeight = 900;
