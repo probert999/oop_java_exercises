@@ -14,8 +14,6 @@ public class DomesticCat extends CatStats {
 
   @Override
   public String eat() {
-    boolean randomComment = new Random().nextBoolean();
-
-    return (randomComment ? eatSound + ". " + eatingComment : eatSound);
+    return (new Random().nextBoolean() ? eatSound + ". " + eatingComment : eatSound);
   }
 }

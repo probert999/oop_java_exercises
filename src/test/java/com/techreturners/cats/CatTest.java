@@ -1,8 +1,6 @@
 package com.techreturners.cats;
 
 import org.junit.Test;
-
-import static org.hamcrest.CoreMatchers.anyOf;
 import static org.junit.Assert.*;
 
 public class CatTest {
