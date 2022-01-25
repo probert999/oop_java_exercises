@@ -7,9 +7,7 @@ public class DomesticCat extends Cat {
   private String eatingComment = "It will do I suppose.";
 
   public DomesticCat() {
-    this.averageHeight = 23;
-    this.setting = "domestic";
-    this.eatSound = "Purrrrrrr";
+    super(23,"domestic", "Purrrrrrr");
   }
 
   @Override
